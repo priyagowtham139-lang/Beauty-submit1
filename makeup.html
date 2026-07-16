@@ -62,10 +62,8 @@
 <section class="makeup-hero" id="makeupHero">
   <div class="makeup-hero-slideshow" id="makeupHeroSlides">
     <div class="makeup-slide active">
-      <svg viewBox="0 0 1200 500" preserveAspectRatio="xMidYMid slice" class="makeup-slide-svg">
-        <defs><clipPath id="hc1"><rect width="1200" height="500"/></clipPath></defs>
-        <g clip-path="url(#hc1)"><image href="Assets/Makeup_1.webp" width="1200" height="500" preserveAspectRatio="xMidYMid slice"/></g>
-      </svg>
+      <div class="makeup-slide-backdrop" style="background-image:url('Assets/Makeup1.webp');"></div>
+      <div class="makeup-slide-scrim"></div>
       <svg class="hero-fx" viewBox="0 0 1200 500" preserveAspectRatio="xMidYMid slice">
         <circle class="hero-svg-ring" cx="1100" cy="70" r="55" fill="none" stroke="rgba(201,162,75,.5)" stroke-width="2"/>
         <circle class="hero-svg-ring delay1" cx="1100" cy="70" r="35" fill="none" stroke="rgba(201,162,75,.35)" stroke-width="1.5"/>
@@ -74,10 +72,8 @@
       </svg>
     </div>
     <div class="makeup-slide">
-      <svg viewBox="0 0 1200 500" preserveAspectRatio="xMidYMid slice" class="makeup-slide-svg">
-        <defs><clipPath id="hc2"><rect width="1200" height="500"/></clipPath></defs>
-        <g clip-path="url(#hc2)"><image href="Assets/Makeup_2.webp" width="1200" height="500" preserveAspectRatio="xMidYMid slice"/></g>
-      </svg>
+      <div class="makeup-slide-backdrop" style="background-image:url('Assets/Makeup2.webp');"></div>
+      <div class="makeup-slide-scrim"></div>
       <svg class="hero-fx" viewBox="0 0 1200 500" preserveAspectRatio="xMidYMid slice">
         <circle class="hero-svg-ring" cx="100" cy="80" r="50" fill="none" stroke="rgba(247,225,229,.5)" stroke-width="2"/>
         <circle class="hero-svg-ring delay1" cx="100" cy="80" r="30" fill="none" stroke="rgba(247,225,229,.35)" stroke-width="1.5"/>
@@ -86,10 +82,8 @@
       </svg>
     </div>
     <div class="makeup-slide">
-      <svg viewBox="0 0 1200 500" preserveAspectRatio="xMidYMid slice" class="makeup-slide-svg">
-        <defs><clipPath id="hc3"><rect width="1200" height="500"/></clipPath></defs>
-        <g clip-path="url(#hc3)"><image href="Assets/Makeup_3.webp" width="1200" height="500" preserveAspectRatio="xMidYMid slice"/></g>
-      </svg>
+      <div class="makeup-slide-backdrop" style="background-image:url('Assets/Makeup3.webp');"></div>
+      <div class="makeup-slide-scrim"></div>
       <svg class="hero-fx" viewBox="0 0 1200 500" preserveAspectRatio="xMidYMid slice">
         <circle class="hero-svg-ring" cx="1000" cy="440" r="52" fill="none" stroke="rgba(201,162,75,.5)" stroke-width="2"/>
         <circle class="hero-svg-ring delay1" cx="1000" cy="440" r="32" fill="none" stroke="rgba(201,162,75,.35)" stroke-width="1.5"/>
@@ -97,6 +91,32 @@
         <circle class="hero-svg-dot delay2" cx="900" cy="50" r="4" fill="#C9A24B" opacity=".6"/>
       </svg>
     </div>
+
+    <svg class="makeup-hero-bg-anim" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <radialGradient id="mBgG" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="rgba(255,255,255,.10)"/><stop offset="100%" stop-color="rgba(255,255,255,0)"/></radialGradient>
+      </defs>
+      <circle class="hero-bg-blob b1" cx="100" cy="120" r="90" fill="url(#mBgG)"/>
+      <circle class="hero-bg-blob b2" cx="480" cy="300" r="70" fill="rgba(201,162,75,.08)"/>
+      <circle class="hero-bg-blob b3" cx="300" cy="80" r="55" fill="rgba(232,93,117,.08)"/>
+      <circle class="mhero-particle p1" cx="60" cy="250" r="3" fill="#C9A24B" opacity=".5"/>
+      <circle class="mhero-particle p2" cx="200" cy="350" r="2.5" fill="#E85D75" opacity=".45"/>
+      <circle class="mhero-particle p3" cx="400" cy="150" r="3.5" fill="#C9A24B" opacity=".4"/>
+      <circle class="mhero-particle p4" cx="520" cy="280" r="2.5" fill="#F7E1E5" opacity=".45"/>
+      <circle class="mhero-particle p5" cx="150" cy="60" r="3" fill="#E4C77A" opacity=".4"/>
+      <circle class="mhero-particle p6" cx="380" cy="340" r="2.5" fill="#C9A24B" opacity=".45"/>
+    </svg>
+
+    <div class="makeup-hero-slide-content">
+      <div class="eyebrow reveal">Category</div>
+      <h1 class="reveal reveal-delay-1">Makeup that moves<br>with you</h1>
+      <p class="reveal reveal-delay-2">From everyday nude lips to full-glam palettes — explore 150+ makeup brands loved across India.</p>
+      <div class="hero-cta reveal reveal-delay-3">
+        <a href="404.html" class="btn btn-primary">Shop Bestsellers <i class="fa-solid fa-chevron-right"></i></a>
+        <a href="404.html" class="btn btn-ghost-light">Explore Brands</a>
+      </div>
+    </div>
+
     <button class="makeup-hero-arrow makeup-hero-prev" aria-label="Previous slide"><i class="fa-solid fa-chevron-left"></i></button>
     <button class="makeup-hero-arrow makeup-hero-next" aria-label="Next slide"><i class="fa-solid fa-chevron-right"></i></button>
     <div class="makeup-hero-progress"><div class="makeup-hero-progress-fill"></div></div>
@@ -106,32 +126,6 @@
       <button class="makeup-hero-dot" data-index="2" aria-label="Slide 3"></button>
     </div>
   </div>
-
-  <div class="makeup-hero-content">
-    <svg class="makeup-hero-bg-anim" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice">
-      <defs>
-        <radialGradient id="mBgG" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="rgba(107,30,60,.07)"/><stop offset="100%" stop-color="rgba(107,30,60,0)"/></radialGradient>
-      </defs>
-      <circle class="hero-bg-blob b1" cx="100" cy="120" r="90" fill="url(#mBgG)"/>
-      <circle class="hero-bg-blob b2" cx="480" cy="300" r="70" fill="rgba(201,162,75,.05)"/>
-      <circle class="hero-bg-blob b3" cx="300" cy="80" r="55" fill="rgba(232,93,117,.05)"/>
-      <circle class="mhero-particle p1" cx="60" cy="250" r="3" fill="#C9A24B" opacity=".5"/>
-      <circle class="mhero-particle p2" cx="200" cy="350" r="2.5" fill="#E85D75" opacity=".45"/>
-      <circle class="mhero-particle p3" cx="400" cy="150" r="3.5" fill="#C9A24B" opacity=".4"/>
-      <circle class="mhero-particle p4" cx="520" cy="280" r="2.5" fill="#F7E1E5" opacity=".45"/>
-      <circle class="mhero-particle p5" cx="150" cy="60" r="3" fill="#E4C77A" opacity=".4"/>
-      <circle class="mhero-particle p6" cx="380" cy="340" r="2.5" fill="#C9A24B" opacity=".45"/>
-    </svg>
-    <div class="container">
-      <div class="eyebrow reveal">Category</div>
-      <h1 class="reveal reveal-delay-1">Makeup that moves with you</h1>
-      <p class="reveal reveal-delay-2">From everyday nude lips to full-glam palettes — explore 150+ makeup brands loved across India.</p>
-      <div class="hero-cta reveal reveal-delay-3">
-        <a href="404.html" class="btn btn-primary">Shop Bestsellers <i class="fa-solid fa-chevron-right"></i></a>
-        <a href="404.html" class="btn btn-outline">Explore Brands</a>
-      </div>
-    </div>
-  </div>
 </section>
 
 <section class="section-tight">
@@ -139,6 +133,7 @@
     <div class="grid grid-4" style="grid-template-columns:repeat(4,1fr);">
       <a href="#trending" class="cat-tile reveal"><img src="Assets/Lips.webp" alt="Lips" class="cat-tile-img"><span class="cat-tile-label">Lips</span></a>
       <a href="#trending" class="cat-tile reveal reveal-delay-1"><img src="Assets/eye.webp" alt="Eyes" class="cat-tile-img"><span class="cat-tile-label">Eyes</span></a>
+
       <a href="#trending" class="cat-tile reveal reveal-delay-2"><img src="Assets/Face.webp" alt="Face" class="cat-tile-img"><span class="cat-tile-label">Face</span></a>
       <a href="#trending" class="cat-tile reveal reveal-delay-3"><img src="Assets/brushes.webp" alt="Brushes & Tools" class="cat-tile-img"><span class="cat-tile-label">Brushes &amp; Tools</span></a>
     </div>
